@@ -46,6 +46,7 @@ $(document).ready(function() {
         console.log(arr[0].canonicalurl);
         console.log(arr[0].thumbnail.source);
         var i;
+        $('#search-results').empty();
         for (i = 0; i < arr.length; i++) {
           $('#search-results').append(
             '<div class="media"><img class="media-thumbnail mr-3" src="' + arr[i].thumbnail.source + '" alt="thumbnail img"><div class="media-body"><h5 class="media-title mt-0">' + arr[i].title + '</h5><p class="media-extract">' + arr[i].extract + '</p></div><!-- .media-body --></div><!-- .media -->'
