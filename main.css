@@ -1,0 +1,50 @@
+body {
+  background-color: #404040;
+  color: #fff;
+}
+
+/* input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+} */
+
+
+
+/* Pulse the spinner div opacity */
+#spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: pulse 2s infinite;
+  -moz-animation: pulse 2s infinite;
+  -o-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0%   { opacity: .6; }
+  50% { opacity: 1; }
+  100% { opacity: .6; }
+}
+@-moz-keyframes pulse {
+  0%   { opacity: .6; }
+  50% { opacity: 1; }
+  100% { opacity: .6; }
+}
+@-o-keyframes pulse {
+  0%   { opacity: .6; }
+  50% { opacity: 1; }
+  100% { opacity: .6; }
+}
+@keyframes pulse {
+  0%   { opacity: .6; }
+  50% { opacity: 1; }
+  100% { opacity: .6; }
+}
