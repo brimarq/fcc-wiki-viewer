@@ -19,28 +19,54 @@
         <i class="fas fa-spinner fa-pulse fa-3x"></i>
       </div>
 
-      <form id="wikiSearch" action="" target="_blank">
-        <label for="searchbox">Search Wikipedia</label>
-        <div class="input-group mb-3">
-          <input id="searchbox" type="text" class="form-control" placeholder="Search..." name="search">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+      <div id="searchDiv" class="d-flex justify-content-center">
+        <form id="wikiSearch" action="" target="_blank">
+          <label for="searchbox">Search Wikipedia</label>
+          <div class="input-group mb-3">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search..." name="search">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
           </div>
-        </div>
-      </form>
-
-      <div id="search-results">
-        <div class="media">
-          <img class="media-thumbnail mr-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/IronMaidencollage2.jpg/44px-IronMaidencollage2.jpg" alt="Generic placeholder image">
-          <div class="media-body">
-            <h5 class="media-title mt-0">Media heading</h5>
-            <p class="media-extract">
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-            
-          </div><!-- .media-body -->
-        </div><!-- .media -->
+        </form>
       </div>
+      
+
+      <div id="search-results" class="list-group">
+
+        <a href="#" class="list-group-item list-group-item-action" target="_blank">
+          <div class="media">
+            <img class="thumbnail mr-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/IronMaidencollage2.jpg/88px-IronMaidencollage2.jpg" alt="Thumbnail image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Iron Maiden</h5>
+              <p class="mb-0">Iron Maiden are an English heavy metal band formed in Leyton, East London, in 1975 by bassist and primary songwriter Steve Harris.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="media">
+            <img class="thumbnail mr-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Diverse_torture_instruments.jpg/78px-Diverse_torture_instruments.jpg" alt="Thumbnail image">
+            <div class="media-body">
+              <h5 class="mb-1">Iron maiden</h5>
+              <p class="mb-0">The iron maiden was a putative torture and execution device, consisting of an iron cabinet with a hinged front and spike-covered interior, sufficiently tall to enclose a human being.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="media">
+            <img class="thumbnail mr-3" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Iron_Maiden_%28album%29_cover.jpg/100px-Iron_Maiden_%28album%29_cover.jpg" alt="Thumbnail image">
+            <div class="media-body">
+              <h5 class="mb-1">Iron Maiden (album)</h5>
+              <p class="mb-0">Iron Maiden is the debut studio album by the English heavy metal band Iron Maiden.</p>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+
+      
       
       
         
