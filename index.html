@@ -17,66 +17,28 @@
       <div id="searchDiv" class="text-center">
         <h1>WikiViewer</h1>
         <form id="wikiSearch" action="" target="_blank">
-          <label for="searchbox">Search Wikipedia or get a random article:</label>
+          <label for="searchbox">Search Wikipedia (<i class="fas fa-search"></i>) or get a random article(<i class="fas fa-dice"></i>):</label>
           <div class="input-group mb-3">
             <!-- Search button -->
             <div class="input-group-prepend">
               <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
             </div>
             <!-- Input text box -->
-            <input id="searchbox" type="text" class="form-control" placeholder="Search..." name="search">
+            <input id="searchbox" type="search" class="form-control" placeholder="Search..." name="search">
             <!-- Random link -->
             <div class="input-group-append">
               <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-primary" target="_blank"><i class="fas fa-dice"></i></a>
             </div>
           </div>
         </form>
-      </div>
+      </div><!-- .searchDiv -->
       
+      <!-- Search results will be shown here -->
+      <div id="search-results" class="list-group mb-3"></div>
 
-      <div id="search-results" class="list-group">
-
-        <a href="#" class="list-group-item list-group-item-action" target="_blank">
-          <div class="media">
-            <img class="thumbnail mr-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/IronMaidencollage2.jpg/88px-IronMaidencollage2.jpg" alt="Thumbnail image">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">Iron Maiden</h5>
-              <p class="mb-0">Iron Maiden are an English heavy metal band formed in Leyton, East London, in 1975 by bassist and primary songwriter Steve Harris.</p>
-            </div>
-          </div>
-        </a>
-
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-          <div class="media">
-            <img class="thumbnail mr-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Diverse_torture_instruments.jpg/78px-Diverse_torture_instruments.jpg" alt="Thumbnail image">
-            <div class="media-body">
-              <h5 class="mb-1">Iron maiden</h5>
-              <p class="mb-0">The iron maiden was a putative torture and execution device, consisting of an iron cabinet with a hinged front and spike-covered interior, sufficiently tall to enclose a human being.</p>
-            </div>
-          </div>
-        </a>
-
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-          <div class="media">
-            <img class="thumbnail mr-3" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Iron_Maiden_%28album%29_cover.jpg/100px-Iron_Maiden_%28album%29_cover.jpg" alt="Thumbnail image">
-            <div class="media-body">
-              <h5 class="mb-1">Iron Maiden (album)</h5>
-              <p class="mb-0">Iron Maiden is the debut studio album by the English heavy metal band Iron Maiden.</p>
-            </div>
-          </div>
-        </a>
-
-      </div>
-
-      <footer></footer>
-      
-      
-        
-    
     </div><!-- .container-fluid -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JavaScript: jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>

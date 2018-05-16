@@ -1,11 +1,8 @@
 $(document).ready(function() {
-  //var wikiPages = [];
 
   $('#wikiSearch').submit(function(e){
     
     var searchTerm = $('#searchbox').val();
-    console.log('Search submitted.');
-    console.log(searchTerm);
 
     $.ajax({
       url: 'https://en.wikipedia.org/w/api.php',
@@ -30,7 +27,21 @@ $(document).ready(function() {
       success: function (x) {
         // What to do if there are no search results
         if (!x.query) {
-          return console.log("OOPS! BAD QUERY!");
+          return function() {
+            console.log("OOPS! BAD QUERY!");
+            console.log(searchTerm);
+            $('#search-results').empty();
+            if (searchTerm === '') {
+              $('#search-results').append(
+                '<div class="alert alert-warning alert-dismissible fade show" role="alert"><strong>Oops!</strong> Nothing to search! Please enter a search term and try again.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
+              );
+            }
+            else {
+              $('#search-results').append(
+                '<div class="alert alert-warning alert-dismissible fade show" role="alert"><strong>Oops!</strong> No results for "' + searchTerm + '". Check spelling and try again.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
+              );
+            }
+          }();
         } 
         // Do this when query is returned
         else {
@@ -52,19 +63,8 @@ $(document).ready(function() {
       }
     });
 
-
-
+    // Prevent default html form submit behavior
     e.preventDefault();
   });
-
-
-
-  // $('.list-group a').on('mouseenter', function() {
-  //   $(this).addClass('active');
-  // });
-
-  // $('.list-group a').on('mouseleave', function() {
-  //   $(this).removeClass('active');
-  // });
 
 });

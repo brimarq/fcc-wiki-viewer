@@ -3,41 +3,6 @@ body {
   color: #fff;
 }
 
-/* #searchDiv {
-  margin: auto;
-} */
-
-/* #wikiSearch {
-  width: 50%;
-} */
-/* input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-  width: 100%;
-} */
-
-/* #search-results a {
-  text-decoration: none;
-} */
-
-/* .highlight {
-  background-color: gray;
-  border-left: 5px solid lime;
-  margin-left: -5px;
-  border-radius: 10px;
-  
-} */
-
-/* a.list-group-item.list-group-item-action {
-  background-color: #404040;
-  color: #fff;
-} */
-
 #search-results .thumbnail {
   width: 50px;
 }
-
