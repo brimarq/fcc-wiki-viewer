@@ -28,7 +28,7 @@ $(document).ready(function() {
       },
       dataType: 'jsonp',
       success: function (x) {
-        // What to do with a bad query:
+        // What to do if there are no search results
         if (!x.query) {
           return console.log("OOPS! BAD QUERY!");
         } 
@@ -36,10 +36,6 @@ $(document).ready(function() {
         else {
           // arr variable scoped to this block
           let arr = x.query.pages;
-          console.log(arr[0].title);
-          console.log(arr[0].extract);
-          console.log(arr[0].canonicalurl);
-          //console.log(arr[0].thumbnail.source);
           var i;
           $('#search-results').empty();
           for (i = 0; i < arr.length; i++) {
@@ -63,12 +59,12 @@ $(document).ready(function() {
 
 
 
-  $('.list-group a').on('mouseenter', function() {
-    $(this).addClass('active');
-  });
+  // $('.list-group a').on('mouseenter', function() {
+  //   $(this).addClass('active');
+  // });
 
-  $('.list-group a').on('mouseleave', function() {
-    $(this).removeClass('active');
-  });
+  // $('.list-group a').on('mouseleave', function() {
+  //   $(this).removeClass('active');
+  // });
 
 });

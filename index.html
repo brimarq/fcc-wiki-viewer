@@ -7,25 +7,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <title>Wiki Search</title>
   </head>
   <body>
     <div class="container">
 
-      <div id="spinner" class="text-center">
-        <p>Loading weather</p>
-        <i class="fas fa-spinner fa-pulse fa-3x"></i>
-      </div>
-
-      <div id="searchDiv" class="d-flex justify-content-center">
+      <div id="searchDiv" class="text-center">
+        <h1>WikiViewer</h1>
         <form id="wikiSearch" action="" target="_blank">
-          <label for="searchbox">Search Wikipedia</label>
+          <label for="searchbox">Search Wikipedia or get a random article:</label>
           <div class="input-group mb-3">
-            <input id="searchbox" type="text" class="form-control" placeholder="Search..." name="search">
-            <div class="input-group-append">
+            <!-- Search button -->
+            <div class="input-group-prepend">
               <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Input text box -->
+            <input id="searchbox" type="text" class="form-control" placeholder="Search..." name="search">
+            <!-- Random link -->
+            <div class="input-group-append">
+              <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-primary" target="_blank"><i class="fas fa-dice"></i></a>
             </div>
           </div>
         </form>
@@ -63,10 +65,10 @@
             </div>
           </div>
         </a>
-        
+
       </div>
 
-      
+      <footer></footer>
       
       
         
